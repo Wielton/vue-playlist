@@ -1,12 +1,23 @@
 <template>
     <div>
-        <button>Click</button>
+        <button @click="performTask">{{ buttonFunction }}</button>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'BasicButton'
+        name: 'BasicButton',
+        props: {
+            buttonFunction: {
+                type: String,
+                default: "Click"
+            }
+        },
+        methods: {
+            performTask(){
+                this.$emit('buttonClicked');
+            }
+        }
     }
 </script>
 
