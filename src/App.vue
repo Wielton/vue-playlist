@@ -5,13 +5,16 @@
 </template>
 
 <script>
+
 import UserHome from './components/UserHome.vue'
+
 
 
 export default {
   name: 'App',
   components: {
     UserHome
+    
     
   }
 }
@@ -25,8 +28,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: rgb(0,0,0);
-  height: 97.5vh;
-  width: 99vw;
+  
 }
 </style>
